@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Intern Dashboard</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="logout-btn">
+    <button onclick="location.href='index.html'">Logout</button>
+  </div>
+
+  <div class="page-container">
+    <div class="card">
+      <h1>🎯 Intern Dashboard</h1>
+      <p><strong>Name:</strong> <span id="name">Loading...</span></p>
+      <p><strong>Referral Code:</strong> <span id="referral">Loading...</span></p>
+      <p><strong>Total Donations Raised:</strong> ₹<span id="raised">Loading...</span></p>
+
+      <h3>🏆 Rewards Unlocked</h3>
+      <ul id="rewards"></ul>
+
+      <div class="actions">
+        <button onclick="location.href='leaderboard.html'">View Leaderboard</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

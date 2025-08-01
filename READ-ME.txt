@@ -1,0 +1,21 @@
+# 🌸 Intern Portal – Full Stack App
+
+This is a simple full stack **Intern Dashboard Portal** that lets users:
+
+- View their **name**, **referral code**, and **donations raised**
+- See **unlocked rewards**
+- Check the **leaderboard**
+- Use a **pink-themed modern UI**
+- Navigate via **Login, Dashboard, Leaderboard**, and **Logout**
+
+---
+
+## 🔧 Tech Stack
+
+| Layer       | Technology Used       |
+|-------------|------------------------|
+| Frontend    | HTML, CSS (pink modern theme), JavaScript |
+| Backend     | Node.js, Express       |
+| Data        | Dummy static JSON (no DB needed) |
+
+---

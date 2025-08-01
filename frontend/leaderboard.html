@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Leaderboard</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="logout-btn">
+    <button onclick="location.href='index.html'">Logout</button>
+  </div>
+
+  <div class="page-container">
+    <div class="card">
+      <h1>🏅 Leaderboard</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Amount Raised</th>
+          </tr>
+        </thead>
+        <tbody id="leaderboard-body"></tbody>
+      </table>
+
+      <div class="actions">
+        <button onclick="location.href='dashboard.html'">← Back to Dashboard</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    fetch('http://localhost:5000/api/leaderboard')
+      .then(res => res.json())
+      .then(data => {
+        const tbody = document.getElementById('leaderboard-body');
+        data.forEach(entry => {
+          tbody.innerHTML += `<tr><td>${entry.name}</td><td>₹${entry.raised}</td></tr>`;
+        });
+      });
+  </script>
+</body>
+</html>
