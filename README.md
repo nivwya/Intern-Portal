@@ -14,7 +14,7 @@ This is a simple full stack **Intern Dashboard Portal** that lets users:
 
 | Layer       | Technology Used       |
 |-------------|------------------------|
-| Frontend    | HTML, CSS (pink modern theme), JavaScript |
+| Frontend    | HTML, CSS , JavaScript |
 | Backend     | Node.js, Express       |
 | Data        | Dummy static JSON (no DB needed) |
 
